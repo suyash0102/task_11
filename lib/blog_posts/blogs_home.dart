@@ -46,7 +46,7 @@ class _BlogsHomeState extends State<BlogsHome> {
                                   padding: EdgeInsets.all(10),
                                   child: Text(
                                     "Harshal Atmaramani",
-                                    style: Theme.of(context).textTheme.body2,
+                                    style: Theme.of(context).textTheme.bodyText1,
                                   )),
                               collapsed: Text(
                                 "Blog Posts",
@@ -128,7 +128,7 @@ class _BlogsHomeState extends State<BlogsHome> {
                                   padding: EdgeInsets.all(10),
                                   child: Text(
                                     "Suyash Dahake",
-                                    style: Theme.of(context).textTheme.body2,
+                                    style: Theme.of(context).textTheme.bodyText1,
                                   )),
                               collapsed: Text(
                                 "Blog Posts",
@@ -225,7 +225,7 @@ class _BlogsHomeState extends State<BlogsHome> {
                                   padding: EdgeInsets.all(10),
                                   child: Text(
                                     "Nikhil Tidke",
-                                    style: Theme.of(context).textTheme.body2,
+                                    style: Theme.of(context).textTheme.bodyText1,
                                   )),
                               collapsed: Text(
                                 "Blog Posts",
@@ -237,39 +237,65 @@ class _BlogsHomeState extends State<BlogsHome> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
                                   TextButton(
-                                    child: Text('Cybercrime cases detection using Confusion Matrix'),
+                                    child: Text('K-Means Clustering and its Use Cases in Security Domain'),
                                     onPressed: () {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) {
-                                            return BlogPostsPage(blogUrl: "https://suyashdahake410.medium.com/cybercrime-cases-detection-using-confusion-matrix-a6c3a8215ff3",);
+                                            return BlogPostsPage(blogUrl: "https://nikhil-st8.medium.com/k-means-clustering-and-its-use-cases-in-security-domain-7bd6e78bfa6a",);
                                           },
                                         ),
                                       );
                                     },
                                   ),
                                   TextButton(
-                                    child: Text('Industry use cases of Java Script'),
+                                    child: Text('Confusion Matrix & Cyber Crime'),
                                     onPressed: () {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) {
-                                            return BlogPostsPage(blogUrl: "https://suyashdahake410.medium.com/industry-use-cases-of-java-script-2678d2d8ed0f",);
+                                            return BlogPostsPage(blogUrl: "https://nikhil-st8.medium.com/confusion-matrix-cyber-crime-e3f588674370",);
                                           },
                                         ),
                                       );
                                     },
                                   ),
                                   TextButton(
-                                    child: Text('K-mean clustering and its real use-case in the security domain'),
+                                    child: Text('JavaScript And its Industry Use-Cases'),
                                     onPressed: () {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) {
-                                            return BlogPostsPage(blogUrl: "https://suyashdahake410.medium.com/k-mean-clustering-and-its-real-use-case-in-the-security-domain-731c5ffd8d17",);
+                                            return BlogPostsPage(blogUrl: "https://nikhil-st8.medium.com/javascript-and-its-industry-use-cases-da535158c769",);
+                                          },
+                                        ),
+                                      );
+                                    },
+                                  ),
+                                  TextButton(
+                                    child: Text('GUI Application on Top of Docker'),
+                                    onPressed: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) {
+                                            return BlogPostsPage(blogUrl: "https://nikhil-st8.medium.com/gui-application-on-top-of-docker-2400ff2bbd84",);
+                                          },
+                                        ),
+                                      );
+                                    },
+                                  ),
+                                  TextButton(
+                                    child: Text('Containerizing ML Model in “Docker”'),
+                                    onPressed: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) {
+                                            return BlogPostsPage(blogUrl: "https://nikhil-st8.medium.com/contenarizing-ml-model-e9e4371aa3d0",);
                                           },
                                         ),
                                       );
@@ -322,7 +348,7 @@ class _BlogsHomeState extends State<BlogsHome> {
                                   padding: EdgeInsets.all(10),
                                   child: Text(
                                     "Deepali Ghadia",
-                                    style: Theme.of(context).textTheme.body2,
+                                    style: Theme.of(context).textTheme.bodyText1,
                                   )),
                               collapsed: Text(
                                 "Blog Posts",
@@ -334,44 +360,97 @@ class _BlogsHomeState extends State<BlogsHome> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
                                   TextButton(
-                                    child: Text('Cybercrime cases detection using Confusion Matrix'),
+                                    child: Text('K-means Clustering and its Applications'),
                                     onPressed: () {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) {
-                                            return BlogPostsPage(blogUrl: "https://suyashdahake410.medium.com/cybercrime-cases-detection-using-confusion-matrix-a6c3a8215ff3",);
+                                            return BlogPostsPage(blogUrl: "https://deepalinghadia1606.medium.com/k-means-clustering-and-its-applications-213900837799",);
                                           },
                                         ),
                                       );
                                     },
                                   ),
                                   TextButton(
-                                    child: Text('Industry use cases of Java Script'),
+                                    child: Text('Confusion Matrix and its two types of errors.'),
                                     onPressed: () {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) {
-                                            return BlogPostsPage(blogUrl: "https://suyashdahake410.medium.com/industry-use-cases-of-java-script-2678d2d8ed0f",);
+                                            return BlogPostsPage(blogUrl: "https://deepalinghadia1606.medium.com/confusion-matrix-and-its-two-types-of-errors-62d0454a094d",);
                                           },
                                         ),
                                       );
                                     },
                                   ),
                                   TextButton(
-                                    child: Text('K-mean clustering and its real use-case in the security domain'),
+                                    child: Text('Use case of JavaScript'),
                                     onPressed: () {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) {
-                                            return BlogPostsPage(blogUrl: "https://suyashdahake410.medium.com/k-mean-clustering-and-its-real-use-case-in-the-security-domain-731c5ffd8d17",);
+                                            return BlogPostsPage(blogUrl: "https://deepalinghadia1606.medium.com/use-case-of-javascript-5297c088a17f",);
                                           },
                                         ),
                                       );
                                     },
                                   ),
+                                  TextButton(
+                                    child: Text('Industry Use Case of RedHat OpenShift'),
+                                    onPressed: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) {
+                                            return BlogPostsPage(blogUrl: "https://deepalinghadia1606.medium.com/industry-use-case-of-redhat-openshift-fbf4e7a7582e",);
+                                          },
+                                        ),
+                                      );
+                                    },
+                                  ),
+                                  TextButton(
+                                    child: Text('Powering Preply’s online education platform with CI/CD0'),
+                                    onPressed: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) {
+                                            return BlogPostsPage(blogUrl: "https://deepalinghadia1606.medium.com/powering-preplys-online-education-platform-with-ci-cd0-e668d09eaa0f",);
+                                          },
+                                        ),
+                                      );
+                                    },
+                                  ),
+                                  TextButton(
+                                    child: Text('Nokia: Enabling 5G and DevOps at a Telecom Company with Kubernetes.'),
+                                    onPressed: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) {
+                                            return BlogPostsPage(blogUrl: "https://deepalinghadia1606.medium.com/nokia-enabling-5g-and-devops-at-a-telecom-company-with-kubernetes-6d1688b6b484",);
+                                          },
+                                        ),
+                                      );
+                                    },
+                                  ),
+                                  TextButton(
+                                    child: Text('Create a setup to ping Google but not Facebook.'),
+                                    onPressed: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) {
+                                            return BlogPostsPage(blogUrl: "https://deepalinghadia1606.medium.com/create-a-setup-to-ping-google-but-not-facebook-4085c5800b5d",);
+                                          },
+                                        ),
+                                      );
+                                    },
+                                  ),
+
                                 ],
                               ),
                               builder: (_, collapsed, expanded) {

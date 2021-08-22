@@ -30,6 +30,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   webview_flutter: ^2.0.12
   expandable: ^5.0.1
+  firebase_core: ^1.5.0
+  image_picker:
+  clipboard: ^0.1.2+8
+  firebase_ml_vision:
 
 dev_dependencies:
   flutter_test:
