@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:task_11/blog_posts/blog_posts_page.dart';
 import 'package:task_11/blog_posts/blogs_home.dart';
 
+import 'drawer.dart';
+
 class HomeScreen extends StatefulWidget {
   @override
   _HomeScreenState createState() => _HomeScreenState();
@@ -12,6 +14,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: LeftDrawer(),
       appBar: AppBar(title: Text("Task 11"),backgroundColor: Colors.redAccent,),
       body: SingleChildScrollView(
         child: Column(children: [

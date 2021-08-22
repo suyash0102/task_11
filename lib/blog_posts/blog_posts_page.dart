@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:task_11/drawer.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class BlogPostsPage extends StatefulWidget {
@@ -22,7 +23,6 @@ class _BlogPostsPageState extends State<BlogPostsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:  AppBar(title: Text("Blog Post"),backgroundColor: Colors.redAccent,),
-      drawer: ,
       body: WebView(
         initialUrl: widget.blogUrl,
       ),
