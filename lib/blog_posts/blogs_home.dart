@@ -468,6 +468,104 @@ class _BlogsHomeState extends State<BlogsHome> {
                         ],
                       ),
                     ),
+                  )),
+              ExpandableNotifier(
+                  child: Padding(
+                    padding: const EdgeInsets.all(10),
+                    child: Card(
+                      clipBehavior: Clip.antiAlias,
+                      child: Column(
+                        children: <Widget>[
+                          SizedBox(
+                            height: 150,
+                            child: Container(
+                              child: Container(
+                                child: Image.asset(
+                                  'assets/images/blog_shreya.jpeg',
+                                ),
+                              ),
+                            ),
+                          ),
+                          ScrollOnExpand(
+                            scrollOnExpand: true,
+                            scrollOnCollapse: false,
+                            child: ExpandablePanel(
+                              theme: const ExpandableThemeData(
+                                headerAlignment: ExpandablePanelHeaderAlignment.center,
+                                tapBodyToCollapse: true,
+                              ),
+                              header: Padding(
+                                  padding: EdgeInsets.all(10),
+                                  child: Text(
+                                    "Shreya Khedkar"
+                                        "",
+                                    style: Theme.of(context).textTheme.bodyText1,
+                                  )),
+                              collapsed: Text(
+                                "Blog Posts",
+                                softWrap: true,
+                                maxLines: 2,
+                                overflow: TextOverflow.ellipsis,
+                              ),
+                              expanded: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  TextButton(
+                                    child: Text('k-mean clustering and its use cases.'),
+                                    onPressed: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) {
+                                            return BlogPostsPage(blogUrl: "https://medium.com/@shreyakhedkar05/task-10-f849dc1a4ab7",);
+                                          },
+                                        ),
+                                      );
+                                    },
+                                  ),
+                                  TextButton(
+                                    child: Text('What is a Confusion matrix??'),
+                                    onPressed: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) {
+                                            return BlogPostsPage(blogUrl: "https://medium.com/@shreyakhedkar05/task-05-86b72fd17b1",);
+                                          },
+                                        ),
+                                      );
+                                    },
+                                  ),
+                                  TextButton(
+                                    child: Text('Javascript and its use cases'),
+                                    onPressed: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) {
+                                            return BlogPostsPage(blogUrl: "https://medium.com/@shreyakhedkar05/task-7-2-258063fb4da2",);
+                                          },
+                                        ),
+                                      );
+                                    },
+                                  ),
+                                ],
+                              ),
+                              builder: (_, collapsed, expanded) {
+                                return Padding(
+                                  padding: EdgeInsets.only(left: 10, right: 10, bottom: 10),
+                                  child: Expandable(
+                                    collapsed: collapsed,
+                                    expanded: expanded,
+                                    theme: const ExpandableThemeData(crossFadePoint: 0),
+                                  ),
+                                );
+                              },
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                   ))
             ],
           ),

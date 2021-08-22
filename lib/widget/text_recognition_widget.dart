@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:task_11/api/firebase_ml_api.dart';
 import 'package:task_11/api/rto_api.dart';
+import 'package:task_11/task_08/vehicle_owner_details.dart';
 import 'package:task_11/widget/text_area_widget.dart';
+import '../data.dart';
 import 'controls_widget.dart';
 
 class TextRecognitionWidget extends StatefulWidget {
@@ -36,6 +38,16 @@ class _TextRecognitionWidgetState extends State<TextRecognitionWidget> {
               text: text,
               onClickedCopy: copyToClipboard,
             ),
+            TextButton(onPressed: () {
+
+              Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) {
+                  return VehicleOwnerDetails();
+                },
+              ),
+            );}, child: Text("Get Vehicle Details") )
           ],
         ),
       );
@@ -80,13 +92,7 @@ class _TextRecognitionWidgetState extends State<TextRecognitionWidget> {
   void setText(String newText) {
     setState(() {
       text = newText;
+      vehicleNumber=text;
     });
-  }
-
-  Future getOwnerInfo() async {
-    showDialog(
-      context: context, builder: (BuildContext context) { return CircularProgressIndicator(); },
-    );
-   final data= await fetchAlbum(text);
   }
 }

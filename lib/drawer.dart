@@ -46,7 +46,7 @@ class LeftDrawer extends StatelessWidget {
             dense: true,
             // leading: ,
             title: Text(
-              'Edit User Details',
+              'Linux World Team',
               style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
             ),
             contentPadding: EdgeInsets.symmetric(
